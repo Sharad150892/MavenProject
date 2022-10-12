@@ -35,6 +35,7 @@ public class ProductPage extends BaseClass {
 	}
 	
 	public void clickElipsis() {
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		elipsis.click();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		cross.click();
